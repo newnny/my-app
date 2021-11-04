@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import { AppBar, Toolbar, Typography, Grid } from '@mui/material';
+import Main from './container/Main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ backgroundColor: "#f7f5f2", margin: 30 }}>
+      <div style={{ display: "flex", justifyContent: "center", margin: "30px 0px" }}>
+        <Typography> Contact / And / More</Typography>
+      </div>
+      <Main />
     </div>
   );
 }
