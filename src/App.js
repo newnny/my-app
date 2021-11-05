@@ -1,13 +1,12 @@
-import React, { Fragment } from 'react';
-import { AppBar, Toolbar, Typography, Grid } from '@mui/material';
+import React from 'react';
+import { Typography } from '@mui/material';
+import MenuBar from './container/MenuBar/MenuBar';
 import Main from './container/Main';
 
 function App() {
   return (
     <div style={{ backgroundColor: "#f7f5f2", margin: 30 }}>
-      <div style={{ display: "flex", justifyContent: "center", margin: "30px 0px" }}>
-        <Typography> Contact / And / More</Typography>
-      </div>
+      <MenuBar />
       <Main />
     </div>
   );
