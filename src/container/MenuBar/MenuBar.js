@@ -1,9 +1,13 @@
 import React from "react"
+import { useNavigate } from 'react-router-dom';
 import { menuBarCss } from "./MenuBarCss"
-import { Typography, Box, Link } from "@mui/material"
+import { Box, Link } from "@mui/material"
 
 const MenuBar = () => {
+
+  let navigate = useNavigate();
   const classes = menuBarCss()
+
   return (
     <div className={classes.root}>
       <Box
@@ -18,9 +22,9 @@ const MenuBar = () => {
         }}
       >
         <Link
-          underline="none" color="inherit" //onClick={}
+          underline="none" color="inherit" onClick={e=> {e.preventDefault(); navigate("/portfolio")}}
         >
-          Portpolio
+          Portfolio
         </Link>
         <Link
           underline="none" color="inherit" //onClick={}

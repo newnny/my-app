@@ -1,14 +1,17 @@
 import React from 'react';
-import { Typography } from '@mui/material';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MenuBar from './container/MenuBar/MenuBar';
 import Main from './container/Main';
-
+import AppRouter from './container/AppRouter/AppRouter';
 function App() {
   return (
-    <div style={{ backgroundColor: "#f7f5f2", margin: 30 }}>
-      <MenuBar />
-      <Main />
-    </div>
+    <Router>
+      <div style={{ backgroundColor: "#f7f5f2", margin: 30 }}>
+        <AppRouter />
+        <MenuBar />
+        <Main />
+      </div>
+    </Router>
   );
 }
 
